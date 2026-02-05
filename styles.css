@@ -1,6 +1,5 @@
 body{
     background: white;
-
     background-image: linear-gradient(90deg, #000 50%, #fff 0);
 }
 
@@ -19,7 +18,7 @@ ul {
     align-items: center;
     width: 50vw;
     height: 100svh;
-    perspective: 1000px; /* Geeft diepte aan de flip */
+    perspective: 5000px; /* Geeft diepte aan de flip */
     transform-style: preserve-3d;
     list-style: none;
     padding-left: 0;
@@ -48,7 +47,7 @@ ul {
 /* Draait en verplaatst de kaart naar de rechterkant */
 .kaart.kaartGedraaid{
     /* animation: verplaatsEnDraai 1s forwards; */
-    transform: rotate(-1turn) rotateY(0.5turn);
+    transform: rotateY(0.5turn);
     translate: 50vw 0 calc(sibling-index() * -5em);
     rotate: 0deg;
 }
@@ -87,6 +86,7 @@ ul {
     overflow-y: auto; /* Zorgt dat tekst die te lang is gescrold kan worden */
 }
 
+
 .achterkant svg {
     grid-area: 1 / 1; 
     align-self: top;
@@ -95,12 +95,14 @@ ul {
 }
 
 .achterkant h2 {
+    width: 100%;
     grid-area: 1 / 2; 
     align-self: top;
     height: fit-content;
 }
 
 .achterkant h3 {
+    width: 100%;
     grid-column: 1 / 3; 
     grid-row: 2;
     
@@ -121,42 +123,112 @@ ul {
 /* Bron card flip: https://stackoverflow.com/questions/79074420/how-to-do-i-make-the-flip-card-feature-work */
 
 
-
+/* De informatie kaarten andere kleur geven */
 /* Kaart 2 */
 ul li:nth-of-type(2) .voorkant {
     background-color: blue; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 ul li:nth-of-type(2) .achterkant {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto auto;
-
     background-color: gray; 
     color: white;
-    transform: rotateY(180deg); /* Staat standaard omgedraaid */
-    overflow-y: auto; /* Zorgt dat tekst die te lang is gescrold kan worden */
 }
 
 /* Kaart 4 */
 ul li:nth-of-type(4) .voorkant {
     background-color: blue; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 ul li:nth-of-type(4) .achterkant {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto auto;
-
     background-color: gray; 
     color: white;
-    transform: rotateY(180deg); /* Staat standaard omgedraaid */
-    overflow-y: auto; /* Zorgt dat tekst die te lang is gescrold kan worden */
 }
+
+/* De kaarten een andere rotation geven om de dek op een stapple kaarten te laten lijken */
+
+ul li:nth-of-type(2){
+    rotate: -5deg;
+}
+
+ul li:nth-of-type(3){
+    rotate: -10deg;
+}
+
+ul li:nth-of-type(4){
+    rotate: 10deg;
+}
+
+ul li:nth-of-type(5){
+    rotate: 15deg;
+}
+
+/* phone */
+@media (max-width: 600px) {
+    .kaart.kaartGedraaid{
+        /* animation: verplaatsEnDraai 1s forwards; */
+        transform: rotateY(0.5turn);
+        translate: 50vw 0vw calc(sibling-index() * -5em);
+        rotate: 0deg;
+    }
+    
+    .kaart {
+        rotate: 0deg;
+        width: 10em;
+        height: 17.5em;
+    }
+
+    .achterkant h2 {
+        font-size: 19px;
+    }
+    
+    .achterkant h3 {
+        font-size: 16px;
+    }
+    
+    .achterkant p {
+        font-size: 12px;
+    }
+
+    /* Kaart rotation */
+    ul li:nth-of-type(2){
+        rotate: 0deg;
+    }
+    
+    ul li:nth-of-type(3){
+        rotate: 0deg;
+    }
+    
+    ul li:nth-of-type(4){
+        rotate: 0deg;
+    }
+    
+    ul li:nth-of-type(5){
+        rotate: 0deg;
+    }
+}
+
+/* Tussen tablet en phone */
+@media (max-width: 768px) { 
+    .kaart {
+        rotate: 0deg;
+    }
+    
+    ul li:nth-of-type(2){
+        rotate: 0deg;
+    }
+    
+    ul li:nth-of-type(3){
+        rotate: 0deg;
+    }
+    
+    ul li:nth-of-type(4){
+        rotate: 0deg;
+    }
+    
+    ul li:nth-of-type(5){
+        rotate: 0deg;
+    }
+}
+
+
 

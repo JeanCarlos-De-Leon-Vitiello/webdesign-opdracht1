@@ -1,1 +1,112 @@
-##h1 Read Me
+# Leerdoelen 
+**Leerdoel 1**
+Ik wil beter worden in CSS annimeren en stylen omdat ik eerder niet veel heb gewerkt met css annimaties. Annimaties kan een website veel interesanter maken als het leuke annimaties heeft.
+
+**Leerdoel 2**
+Ik wil beter worden in javscript. Op dit moment werk ik nog te slordig en heb ik het gevoel dat ik de code niet altijd heel goed snap. Ik wil het maken van functies beter begrijpen om met vertrouwen javascript te kunnen gebruiken.
+
+**Leerdoel 3**
+Ik wil oefenen met het gebruiken van een API omdat Ik het maken van fetch reqeusten nog ingewikkeld vind. Ik wil het maken van de fetch en dat overzetten naar HTML zelf kunnen doen zonder elke keer op te zoeken hoe dat moest.
+***
+# Week 1
+## Dag 1/2
+
+**Wat heb ik vandaag gedaan:**
+Vandaag heb ik de workshop Directus → FETCH → JSON → HTML gevolgd waar we over de basics hebben gesproken van html,css en javascript. Het ging over hoe je je html-bestanden aanmaakt en de css en javascript kan linken. Vervolgens hebben we het over variable en functies gehad. Toen we het over javascript functies hebben gehad kon ik het totaal niet volgen omdat we een ander manier van functies schrijven hebben gehad wat te snel voor mij ging. Na de workshop ben ik verder gaan werken aan mijn website. Ik ben best vergekomen met de site, wat ik eigelijk niet had verwacht.
+![figma-ontwerp](./Images/gecodeerd-prototype.png)
+
+**Hoelang duurde het:**
+Het duurde mij 4 uurtjes om tot een idee en figma design te komen. 
+
+Het duurde mij 6 uurtjes om mijn ontwerp te coderen zoals het nu eruit ziet.
+![Gecodeerd-ontwerp](./Images/figma-design.png)
+
+**Wat heb ik geleerd:**
+Ik heb veel leermomenten Gehad tijdens het coderen van mijn ontwerp. Ik heb gewerkt met een aantal nieuwe declaraties zoals:
+
+`perspective: 1000px;` om diepte te geven (3d effect)
+
+`mix-blend-mode: difference;` om kleur effect te krijgen net als blend mode in figma of ilustrator
+
+`transition: 1s cubic-bezier(0.34, 1.56, 0.64, 1); ` Ik heb hier kennis gemaakt met cubic bezier wat zorgt voor een EASING effect.
+
+`translate: 50vw 0 calc(sibling-index() * -5em);` de eerste waarde verteld de waarde van de x-ass(horizontaal) de tweede verteld de y-ass(verticaal) en de derde de z-ass (hoe ver of dichtbij). de laatste waarde telt welke nummer het element heeft en plaatst dat * -5 em naar achter.
+
+`backface-visibility: hidden; ` dit zorgt ervoor dat als we de rug van de element zien dat het hidden is.
+
+`transform-style: preserve-3d;`dit bepaald dat de element zich moet gedragen als een 3d element
+
+**Wat ga ik morgen doen:**
+Morgen ga ik de workshop HTML rulez bij wonen en daarna verder met mijn ontwerp. Ik ga het ontwerp verder stylen zoals ik dat in figma heb gemaakt. Ik ben al best ver gekomen dus ik moet nu even kijken wat ik nog kan toevoegen om zelf meer te leren.
+
+## Dag 3
+
+## Dag 4
+
+## Weekly Nerds (Stop using Js.. In the future)
+<details>
+  <summary>Notes</summary>
+Weekly Nerd: Killian Valkhof (Stop using Js.. In the future)
+
+Er wordt nog vaak gebruik gemaakt van javascript terwijl dat niet nodig is. 
+
+Choose the least powerfull engin. Browser kunnen sneller en beter werken met html en css. De browser moet veel moeite doen om javascript te tonen.
+
+Oude websites die blijven werken in de nieuwe browser versie. Dat is omdat het zo is afgesproken. Dus mensen die een oude code taal gebruikte daar nog steeds meer door kunnen gaan.
+
+Custom switch
+
+Code: Appearance none: ik wil niet dat dit gestyled wordt als een form element maar ik wil het zelf gaan stylen. Hierdoor veranderd de input in een sort div.
+
+Input:: Before: input kan je dan gebruiken als achtergrond en den bolletje is dan de before.
+
+Input:: checked: zorgt ervoor dat het transformeerd zodra er op geklikt wordt. Je kan dan een sort on click maken die geen javascript nodig heeft.
+ 
+Leugen: forms zijn moeilijk te stijlen. Dit klopte 10 jaar geleden omdat de browser al standard input elementen had.
+
+Focus
+Wordt gebruikt wanneer een gebruiker met zijn toetsebord door de website heen tab. Als je geen focos maakt dan krijgt het de standaard focus die de browser mee geeft.
+
+<input type=”checkbox” switch/> zorgt ervoor dat je een checkbox kan laten renderen al seen switch in de browser. (werkt alleen in safari)
+
+In-page transition
+Html { scroll-behavior: smooth} verteld de browser om ergens naar toe te scrollen met een annimatie. Zo hoef je geen javascript te gebruiken wat de performance befordered.
+
+@media (Prefers-reduce-motion: 
+no prefrence) {html{
+scroll-behavour: smooth}
+}
+Zorgt ervoor dat als iemand in zijn browser setting reduce motion aan heeft staan dan zorgt het ervoor dat er geen annimatie zijn.
+
+Scroll-margin 
+zorgt ervoor dat wanneer je helemaal boven aan scrolled de tekst of andere content niet onder een header komen door de margin die je toevoegd.
+
+Target Pseudo element
+Accordians
+Details en summary element samen zorgt voor een soort drop down die die alleen de summary toont als het dicht geklapt is. Alles wat er onder is zo als een p wordt pas getoond als je het open zet.
+
+Elke keer dat je het open zet geeft de browser de open attribut aan de details element.
+
+::marker Pseudo element kan je gebruiken om de marker van de details element te wijzigen. Net als bij een UL of OL. Dan kan je het pijltje of nummer wijzigen.
+
+:hover seudo element kan je gebruiken om de state van het element veranderen als je met je muis over het element gaat.
+
+Name= als je meerdere details dezelfde naam hebben dan gaat er maar 1 detail open. Dus als je een andere opent dan gaat de vorige dicht.
+
+Dialog
+Zijn pop-ups. Het is niet meer dan een div die standaard onzichtbaar is. Je hebt hier dan een on clickfunctie nodig om het open en dicht te maken.
+
+:backdrop Pseudo element zorgt ervoor dat er een chtergrondje over jewebsite komt.
+
+@starting-style kan je gebruiken om dialog te gebruiken om te animeren.
+
+</details>
+
+# Week 2
+
+# Bronnen
+Luxford, C. (2024, 10 oktober). How to do I make the flip card feature work? Stack Overflow. https://stackoverflow.com/questions/79074420/how-to-do-i-make-the-flip-card-feature-work
+
+Marlius. (2017, 7 juni). Items that span all columns/rows using CSS grid layout. Stack Overflow. https://stackoverflow.com/questions/42239778/items-that-span-all-columns-rows-using-css-grid-layout/
+
+W3Schools.com. (z.d.). https://www.w3schools.com/css/css_positioning.asp

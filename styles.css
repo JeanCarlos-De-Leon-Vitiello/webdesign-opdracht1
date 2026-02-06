@@ -15,7 +15,8 @@ header button:hover {
     color: black;
 }
 
-h1 {
+
+h1{
     mix-blend-mode: difference;
     position: absolute;
     width: 100%;

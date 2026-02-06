@@ -6,3 +6,5 @@ kaarten.forEach(function (kaart) {
         kaart.classList.add("kaartGedraaid")
     })
 })
+
+// zorgt ervoor dat de kaart terug draait door een class te verwijderen bij een klik

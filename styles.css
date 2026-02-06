@@ -3,6 +3,18 @@ body{
     background-image: linear-gradient(90deg, #000 50%, #fff 0);
 }
 
+header button {
+    padding: 0.8em;
+    font-size: 1em;
+    border-radius: 8px;
+}
+
+header button:hover {
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+}
+
 h1 {
     mix-blend-mode: difference;
     position: absolute;

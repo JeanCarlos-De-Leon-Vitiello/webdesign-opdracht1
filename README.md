@@ -40,6 +40,17 @@ Ik heb veel leermomenten Gehad tijdens het coderen van mijn ontwerp. Ik heb gewe
 Morgen ga ik de workshop HTML rulez bij wonen en daarna verder met mijn ontwerp. Ik ga het ontwerp verder stylen zoals ik dat in figma heb gemaakt. Ik ben al best ver gekomen dus ik moet nu even kijken wat ik nog kan toevoegen om zelf meer te leren.
 
 ## Dag 3
+**Wat heb ik vandaag gedaan:**
+Vandaag ben ik bezig geweest het het responsive maken van mijn website en heb ik de workshop HTML basics bij gewoond. Ik ben ook verder gegaan met het maken van de checkout van gister die ik nog niet af had.
+
+**Hoelang duurde het:**
+Het duurde 2 uurtjes om mijn design responsive te maken.
+
+**Wat heb ik geleerd:**
+Ik heb vandaag geleerd dat er rond de 100 HTML selectoren zijn. Eerder dacht ik dat er meer waren. Ik heb ook kennis gemaakt met een detail list en en de items die je daar in kan toevoegen.
+
+**Wat ga ik morgen doen:**
+Morgen ga ik mijn ontwerp precenteren en wil ik daarna een api geruiken om gegevens op te halen die vervolgens in mijn kaarten worden ingevuld.
 
 ## Dag 4
 

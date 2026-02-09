@@ -18,6 +18,8 @@ resetKnop.addEventListener("click", function(){
     shuffle();
 }) 
 
+
+// functie om de kaarten volgorder random te maken
 shuffle();
 
 function shuffle(){
@@ -42,6 +44,9 @@ function shuffle(){
       
     }
 
+
+    // functie om mijn naam uit de api te halen
+
     // naam uit de api halen en in de h1 zetten
     const titel = document.querySelector("h1")
 
@@ -60,5 +65,32 @@ function shuffle(){
       // veranderd de text content van de h1 
       titel.textContent = gegevensPersonen.data.name
 
-
     }
+
+
+// functie om api gegevens op te halen
+let base = "https://fdnd.directus.app/items"
+let endpoint = "/person?filter[squads][squad_id][tribe][name]=CMD%20Minor%20Web%20Dev&filter[squads][squad_id][cohort]=2526"
+let url = base + endpoint
+
+let lijstStudenten = document.querySelector(".studentenUL")
+
+async function minorPersonenOphalen() {
+  let response = await fetch(url)
+  let responseJSON = await response.json()
+  let minorPersonen = responseJSON.data
+  console.log(minorPersonen)
+
+  minorPersonen.forEach (function (persoon) {
+    let persoonHTML = 
+    `<li>
+    <h2>${persoon.name}</h2>
+    <img src="${persoon.avatar}" alt="">
+    </li>`
+
+    lijstStudenten.insertAdjacentHTML("beforeend", persoonHTML)
+  })
+
+}
+
+minorPersonenOphalen()

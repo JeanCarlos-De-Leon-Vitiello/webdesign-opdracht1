@@ -52,8 +52,6 @@ Ik heb vandaag geleerd dat er rond de 100 HTML selectoren zijn. Eerder dacht ik 
 **Wat ga ik morgen doen:**
 Morgen ga ik mijn ontwerp precenteren en wil ik daarna een api geruiken om gegevens op te halen die vervolgens in mijn kaarten worden ingevuld.
 
-## Dag 4
-
 ## Weekly Nerds (Stop using Js.. In the future)
 <details>
   <summary>Notes</summary>
@@ -114,6 +112,20 @@ Zijn pop-ups. Het is niet meer dan een div die standaard onzichtbaar is. Je hebt
 </details>
 
 # Week 2
+## Dag 1
+**Wat heb ik vandaag gedaan:**
+Vandaag ben ik bezig geweest met het maken van een fetch van alle studenten om dat dan vervolgens in een ticker te zetten die oneindig scrolled. De ticker heb ik kunnen maken met alleen wat css wat heel lastig was om informatie over te vinden. door een youtube video te volgen heb ik het uiteindelijk kunnen doen.
+
+ik heb vandaag ook de workshop van sanne gevolgd over het doen van een fetch en dat dan omzetten in json en dan weer omzetten naar html.
+
+**Hoelang duurde het:**
+om de fetch en de ticker helemaal werkende te krijgen duurde het mij ongeveer 5 uurtjes. ik kwam steeds tegen dingen aan wat ervoor zorgde dat lang bezig was met het fixen van problemen.
+
+**Wat heb ik geleerd:**
+Ik heb geleerd dat het hel belangrijk is dat je juiste selector selecteerd in css omdat je anders ook andere elementen kan aanroepen wat kan zorgen dat meerdere elementen aangepast worden.
+
+**Wat ga ik morgen doen:**
+Morgen ga ik bedenken en het maken van de thema voor mijn website. als ik dat nog tijd over heb ga ik de kaarten invullen door een json bestand in de api toe te voegen.
 
 # Bronnen
 Luxford, C. (2024, 10 oktober). How to do I make the flip card feature work? Stack Overflow. https://stackoverflow.com/questions/79074420/how-to-do-i-make-the-flip-card-feature-work

@@ -1,12 +1,12 @@
 # Leerdoelen 
 **Leerdoel 1**
-Ik wil beter worden in CSS annimeren en stylen omdat ik eerder niet veel heb gewerkt met css annimaties. Annimaties kan een website veel interesanter maken als het leuke annimaties heeft.
+Ik wil beter worden in CSS annimeren, omdat ik vind dat annimaties een website veel leuker kan maken.
 
 **Leerdoel 2**
-Ik wil beter worden in javscript. Op dit moment werk ik nog te slordig en heb ik het gevoel dat ik de code niet altijd heel goed snap. Ik wil het maken van functies beter begrijpen om met vertrouwen javascript te kunnen gebruiken.
+Ik wil beter worden in javscript. Op dit moment heb ik het gevoel dat ik de code niet altijd heel goed begrijp. Ik wil het maken van functies beter begrijpen om met meer vertrouwen javascript te kunnen gebruiken.
 
 **Leerdoel 3**
-Ik wil oefenen met het gebruiken van een API omdat Ik het maken van fetch reqeusten nog ingewikkeld vind. Ik wil het maken van de fetch en dat overzetten naar HTML zelf kunnen doen zonder elke keer op te zoeken hoe dat moest.
+Ik wil mijn vaardigheden in het schrijven van nette, goed gestructureerde code verbeteren. Hiermee bedoel ike goede code-hygiëne, zoals het gebruiken van duidelijke variabelen, overzichtelijke indeling en het toevoegen van commentaar die verteld wat de code doet.
 ***
 # Week 1
 ## Dag 1/2

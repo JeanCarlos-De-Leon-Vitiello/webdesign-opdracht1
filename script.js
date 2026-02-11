@@ -69,9 +69,9 @@ function shuffle(){
 
 
 // functie om api gegevens op te halen
-let base = "https://fdnd.directus.app/items"
-let endpoint = "/person?filter[squads][squad_id][tribe][name]=CMD%20Minor%20Web%20Dev&filter[squads][squad_id][cohort]=2526"
-let url = base + endpoint
+const base = "https://fdnd.directus.app/items"
+const endpoint = "/person?filter[squads][squad_id][tribe][name]=CMD%20Minor%20Web%20Dev&filter[squads][squad_id][cohort]=2526"
+const url = base + endpoint
 
 let lijstStudenten = document.querySelector(".studentenUL")
 
@@ -81,16 +81,37 @@ async function minorPersonenOphalen() {
   let minorPersonen = responseJSON.data
   console.log(minorPersonen)
 
-  minorPersonen.forEach (function (persoon) {
+
+  minorPersonen.forEach (function (persoon) { 
+    if (persoon.avatar === null) {
+      persoon.avatar = "https://www.clipartmax.com/png/middle/175-1759751_green-vertebrate-frog-nose-head-amphibian-leaf-tree-funny-profile-pictures-for.png"
+    }
+  
+    else{
+      
+    }
+
     let persoonHTML = 
     `<li>
     <h2>${persoon.name}</h2>
     <img src="${persoon.avatar}" alt="">
     </li>`
 
-    lijstStudenten.insertAdjacentHTML("beforeend", persoonHTML)
-  })
+    
 
+    lijstStudenten.insertAdjacentHTML("beforeend", persoonHTML)
+    
+  })
+  
 }
 
 minorPersonenOphalen()
+
+
+
+// darkmode button laten werken 
+const darkmodeKnop = document.querySelector("header button:nth-of-type(2)")
+
+darkmodeKnop.addEventListener("click", function () {
+    document.body.classList.toggle("darkmode")
+})

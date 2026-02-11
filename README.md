@@ -201,13 +201,15 @@ morgen wil ik de dark en light mode knop annimeren zodat het als een slider gaat
 
 ## Dag 3
 **Wat heb ik vandaag gedaan:**
+ik heb een code review gedaan aan de hand van de fdnd website.
+
  Ik ben best lang bezig geweest met het proberen te animeren van de slider maar het het lukte helaas niet. Ik heb daarom ervoor gekozen om alleen de afbeelding te veranderen on click.
 
 **Hoelang duurde het:**
 het proberen te annimeren van de slider duurde mij zo een 3 uurtje fouten maken en 2 uurtjes om het goed te doen.
 
 **Wat heb ik geleerd:**
-Ik heb geleerd dat het toevoegen van meerdere classes met javascript best ingewikkeld is. Hoe graag ik wilde dat het ook ging werken, kwam ik er niet uit
+Ik heb geleerd dat het toevoegen van meerdere classes met javascript best ingewikkeld is. ik wilde meerdere classen toevegen en af halen maar dat lukte me niet.
 
 **Wat ga ik morgen doen:**
 Morgen ga ik mijn werk presenteren.

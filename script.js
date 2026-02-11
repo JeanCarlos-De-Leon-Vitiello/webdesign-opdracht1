@@ -16,6 +16,7 @@ resetKnop.addEventListener("click", function(){
     }) 
 
     shuffle();
+    randomStudentOphalen()
 }) 
 
 
@@ -106,6 +107,36 @@ async function minorPersonenOphalen() {
 }
 
 minorPersonenOphalen()
+
+// functie om een random student te laten zien op een kaart
+async function randomStudentOphalen() {
+  let response = await fetch(url)
+  let responseJSON = await response.json()
+  let minorPersonen = responseJSON.data
+
+  // Random persoon kiezen
+  let randomGetal = Math.floor(Math.random() * minorPersonen.length)
+  let persoon = minorPersonen[randomGetal]
+
+  // fallback avatar
+  if (!persoon.avatar) {
+    persoon.avatar = "https://www.clipartmax.com/png/middle/175-1759751_green-vertebrate-frog-nose-head-amphibian-leaf-tree-funny-profile-pictures-for.png"
+  }
+
+  // kaart elemeneten selecteren
+  const naamElement = document.querySelector(".studentNaam")
+  const avatarElement = document.querySelector(".studentAvatar")
+  const bijnaamElement = document.querySelector(".studentBijnaam")
+  const iconElement = document.querySelector(".studentIcon")
+
+  // kaart invullen
+  naamElement.textContent = persoon.name
+  avatarElement.src = persoon.avatar
+  bijnaamElement.textContent = persoon.nickname
+  iconElement.textContent = persoon.fav_emoji
+}
+
+randomStudentOphalen()
 
 
 

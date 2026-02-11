@@ -115,7 +115,7 @@ Zijn pop-ups. Het is niet meer dan een div die standaard onzichtbaar is. Je hebt
 
 **Algemeen verslag:**
 
-In week 1 heb ik mijn Figma-ontwerp naar werkende HTML/CSS vertaald en interactieve kaarten gemaakt die omklappen (flip) en geschud kunnen worden met JavaScript. Ik heb ook basisfetch gebruikt om een naam uit Directus te laden en een eenvoudige darkmode-toggle toegevoegd.
+In week 1 heb ik mijn Figma-ontwerp naar werkende HTML/CSS vertaald en interactieve kaarten gemaakt die omklappen (draaien) en geschud kunnen worden met JavaScript. Ik heb ook fetch gebruikt om een naam uit de api te laden.
 
 **Belangrijkste onderdelen:**
 
@@ -124,7 +124,7 @@ In week 1 heb ik mijn Figma-ontwerp naar werkende HTML/CSS vertaald en interacti
   - ![Gecodeerd prototype](./Images/gecodeerd-prototype.png)
   - ![Figma ontwerp](./Images/figma-design.png)
 
-- Korte codevoorbeelden (gebruik uit de projectbestanden):
+- codevoorbeelden:
 
   HTML (kaartstructuur):
 
@@ -184,7 +184,7 @@ om de fetch en de ticker helemaal werkende te krijgen duurde het mij ongeveer 5 
 Ik heb geleerd dat het hel belangrijk is dat je juiste selector selecteerd in css omdat je anders ook andere elementen kan aanroepen wat kan zorgen dat meerdere elementen aangepast worden.
 
 **Wat ga ik morgen doen:**
-morgen ga ik mijn twee themas maken.
+morgen ga ik mijn twee themas maken die aangepast kan worden door een knop.
 
 ## Dag 2
 **Wat heb ik vandaag gedaan:**
@@ -194,27 +194,49 @@ vandaag ben ik bezig geweest met het maken van de light en dark-mode. Het maken 
 het maken van de light en dark-mode functie duurde mij ongeveer 1 uur
 
 **Wat heb ik geleerd:**
-Ik heb geleerd hoe je text masken om een video of afbeelding. 
+Tijdens de typografie cursus heb ik geleerd je mask kan gebruiken om een afbeelding in typgrafie te kunnen tonen. Ik heb ook geleerd dat dit mogelijk is met een autoplay video kan.
+
+Wat ik ook interesant vond is dat er een soort standard is over de lengte van een tekst vlak. Volgens vassiles is dit een lengte tussen 20 en 40 em. Dit om het niet moeilijk te maken voor de lezer om naar de volgende zin te gaan.
 
 **Wat ga ik morgen doen:**
 morgen wil ik de dark en light mode knop annimeren zodat het als een slider gaat sliden wanneer je erop klikt.
+
+Ik wil ook een kaart vullen met informatie van een random student.
 
 ## Dag 3
 **Wat heb ik vandaag gedaan:**
 ik heb een code review gedaan aan de hand van de fdnd website.
 
- Ik ben best lang bezig geweest met het proberen te animeren van de slider maar het het lukte helaas niet. Ik heb daarom ervoor gekozen om alleen de afbeelding te veranderen on click.
+ Ik ben best lang bezig geweest met het proberen te animeren van de slider maar het het lukte helaas niet. Ik heb daarom ervoor gekozen om alleen de afbeelding te veranderen on click. Ik ben ook bezig geweest met het maken van de functie voor het invullen van een kaart met student informatie. Ik heb weer gebruik kunnen maken van een mathrandom statement wat ik vaker wil gaan oefenen om beter te begrijpen.
 
 **Hoelang duurde het:**
 het proberen te annimeren van de slider duurde mij zo een 3 uurtje fouten maken en 2 uurtjes om het goed te doen.
 
+Het maken van de studenten kaart functie te maken ging best vlot maar de mathrandom duurde mij iets langer omdat ik dat nog lastig vind om te maken. het duurde mij ongeveer 3 uurtjes in totaal.
+
 **Wat heb ik geleerd:**
-Ik heb geleerd dat het toevoegen van meerdere classes met javascript best ingewikkeld is. ik wilde meerdere classen toevegen en af halen maar dat lukte me niet.
+Ik heb geleerd dat het toevoegen van meerdere classes met javascript best ingewikkeld is. ik wilde meerdere classen toevoegen en af halen maar dat lukte me niet waardoor ik de light en dark-mode knop niet kon annimeren.
 
 **Wat ga ik morgen doen:**
 Morgen ga ik mijn werk presenteren.
 
 ## Week 2 verslag
+
+**Algemene samenvatting week 2:**
+
+In week 2 heb ik mij verder verdiept in het werken met fetch, het dynamisch vullen van HTML met data van een api. Zo heb ik een functie kunnen schrijven die 1 kaart vult met informatie van een random student.
+![figma-ontwerp](./Images/kaartstudent.png)
+
+Ik heb geleerd hoe je met CSS en JavaScript interactieve elementen zoals een ticker en een themaswitcher kunt maken die tussen light en dark-mode kunnen togglen. 
+![figma-ontwerp](./Images/maan.png) ![figma-ontwerp](./Images/zon.png)
+
+Ook heb ik ervaren dat het belangrijk is om goed te letten op selectors en het structureren van mijn code. Ik kwam er namelijk achter dat ik meerdere elementen aansprak toen ik meer code ging toevoegen.
+
+Tijdens week 2 heb ik kunnen vallen en kunnen slagen, zoals het animeren van een slider en het werken met random data.
+
+Het maken van de slider is mij helaas niet gelukt wat ik in de toekomst toch opnieuw wil gaan proberen. Ik wilde een slider maken die de maan naar links annimeerd als je op de knop klikt maar dat lukte maar niet. Wat wel positief is is dat ik kennis heb gemaakt met de background image style van CSS. Die ik heb gebruikt om de image source te wijzigen on click met een variable.
+
+Maar waar ik wel blij om ben is dat ik voor het eerst een functie met mathrandom heb kunnen schrijven zonder hulp. Ik heb twee van dit soort functies in mijn code. Bij de eerste ben ik begeleid door sanne. Ik heb vervolgens om nog eentje te maken om zelf ermee te kunnen oefenen.
 
 # Bronnen
 Luxford, C. (2024, 10 oktober). How to do I make the flip card feature work? Stack Overflow. https://stackoverflow.com/questions/79074420/how-to-do-i-make-the-flip-card-feature-work

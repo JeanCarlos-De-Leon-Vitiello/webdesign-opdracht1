@@ -111,6 +111,31 @@ Zijn pop-ups. Het is niet meer dan een div die standaard onzichtbaar is. Je hebt
 
 </details>
 
+## Weekly nerd verslag
+**Samenvatting:**
+
+Tijdens de Weekly Nerds sessie vond ik het interessant om te leren dat veel functionaliteit die vaak met JavaScript werden gemaakt, nu ook alleen (en een beetje javascript) met HTML en CSS kan worden opgelost. Wat killian advieseerde was om de minst krachtige engine te kiezen, zodat de browser sneller en efficienter kan werken. Ik heb geleerd dat forms tegenwoordig te stylen zijn met CSS en dat je met pseudo-elementen en selectors veel kunt doen zonder JavaScript. Ook het gebruik van `scroll-behavior: smooth` en media queries voor motion preferences vond ik leerzaam omdat ik hiermee zelf nog niet veel mee gedaan heb. Ik heb het wel eens gebruikt, maar ik denk dat ik dat vaker kan gaan gebruiken om ze beter te leren kennen. De besproken codevoorbeelden, zoals het stylen van een custom switch en het gebruik van details/summary voor accordions vond ik ook leerzaam omdat ik dat nog nooit had gebruikt.
+
+**Codevoorbeelden:**
+
+```css
+input[type="checkbox"] {
+  appearance: none;
+}
+input::before {}
+input:checked {}
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+```
+
+```html
+<details>
+  <summary>Tekst</summary>
+</details>
+```
+
 # Week 1 verslag
 
 **Algemeen verslag:**

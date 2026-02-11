@@ -111,6 +111,65 @@ Zijn pop-ups. Het is niet meer dan een div die standaard onzichtbaar is. Je hebt
 
 </details>
 
+# Week 1 verslag
+
+**Algemeen verslag:**
+
+In week 1 heb ik mijn Figma-ontwerp naar werkende HTML/CSS vertaald en interactieve kaarten gemaakt die omklappen (flip) en geschud kunnen worden met JavaScript. Ik heb ook basisfetch gebruikt om een naam uit Directus te laden en een eenvoudige darkmode-toggle toegevoegd.
+
+**Belangrijkste onderdelen:**
+
+- Gecodeerd prototype en afbeeldingen:
+
+  - ![Gecodeerd prototype](./Images/gecodeerd-prototype.png)
+  - ![Figma ontwerp](./Images/figma-design.png)
+
+- Korte codevoorbeelden (gebruik uit de projectbestanden):
+
+  HTML (kaartstructuur):
+
+  ```html
+  <li class="kaart">
+    <div class="voorkant"> <!-- svg / icoon --> </div>
+    <div class="achterkant"> <!-- titel, afbeelding, tekst --> </div>
+  </li>
+  ```
+
+  CSS (3D flip):
+
+  ```css
+  .kaartul { perspective: 5000px; }
+  .kaart { transform-style: preserve-3d; transition: 1s cubic-bezier(0.34,1.56,0.64,1); }
+  .voorkant, .achterkant { backface-visibility: hidden; position: absolute; inset: 0; }
+  .achterkant { transform: rotateY(180deg); }
+  .kaart.kaartGedraaid { transform: rotateY(0.5turn); }
+  ```
+
+  JavaScript (shuffle + fetch):
+
+  ```js
+  // shuffle: verplaatst kaarten willekeurig
+  function shuffle() {
+    const kaarten = document.querySelectorAll('.kaart');
+    const lijst = document.querySelector('ul.kaartul');
+    let n = kaarten.length;
+    while (--n > 0) {
+      const i = Math.floor(Math.random() * (n + 1));
+      lijst.appendChild(kaarten[i]);
+    }
+  }
+
+  // fetch voorbeeld: naam in header
+  async function tekstInvoegen() {
+    const URL = 'https://fdnd.directus.app/items/person/293';
+    const res = await fetch(URL);
+    const data = await res.json();
+    document.querySelector('h1').textContent = data.data.name;
+  }
+  ```
+
+Kort: week 1 ging vooral over het omzetten van een ontwerp naar code, leren werken met 3D-transformaties en het toevoegen van basisinteractie met JavaScript.
+
 # Week 2
 ## Dag 1
 **Wat heb ik vandaag gedaan:**
@@ -125,7 +184,35 @@ om de fetch en de ticker helemaal werkende te krijgen duurde het mij ongeveer 5 
 Ik heb geleerd dat het hel belangrijk is dat je juiste selector selecteerd in css omdat je anders ook andere elementen kan aanroepen wat kan zorgen dat meerdere elementen aangepast worden.
 
 **Wat ga ik morgen doen:**
-Morgen ga ik bedenken en het maken van de thema voor mijn website. als ik dat nog tijd over heb ga ik de kaarten invullen door een json bestand in de api toe te voegen.
+morgen ga ik mijn twee themas maken.
+
+## Dag 2
+**Wat heb ik vandaag gedaan:**
+vandaag ben ik bezig geweest met het maken van de light en dark-mode. Het maken van de light en dark-mode functie ging best snel maar ik wilde in plaats van een knop een slider hebben wat me helaas niet was gelukt.
+
+**Hoelang duurde het:**
+het maken van de light en dark-mode functie duurde mij ongeveer 1 uur
+
+**Wat heb ik geleerd:**
+Ik heb geleerd hoe je text masken om een video of afbeelding. 
+
+**Wat ga ik morgen doen:**
+morgen wil ik de dark en light mode knop annimeren zodat het als een slider gaat sliden wanneer je erop klikt.
+
+## Dag 3
+**Wat heb ik vandaag gedaan:**
+ Ik ben best lang bezig geweest met het proberen te animeren van de slider maar het het lukte helaas niet. Ik heb daarom ervoor gekozen om alleen de afbeelding te veranderen on click.
+
+**Hoelang duurde het:**
+het proberen te annimeren van de slider duurde mij zo een 3 uurtje fouten maken en 2 uurtjes om het goed te doen.
+
+**Wat heb ik geleerd:**
+Ik heb geleerd dat het toevoegen van meerdere classes met javascript best ingewikkeld is. Hoe graag ik wilde dat het ook ging werken, kwam ik er niet uit
+
+**Wat ga ik morgen doen:**
+Morgen ga ik mijn werk presenteren.
+
+## Week 2 verslag
 
 # Bronnen
 Luxford, C. (2024, 10 oktober). How to do I make the flip card feature work? Stack Overflow. https://stackoverflow.com/questions/79074420/how-to-do-i-make-the-flip-card-feature-work

@@ -287,6 +287,17 @@ h1{
 
 /* phone */
 @media (max-width: 600px) {
+    header button:nth-of-type(2) {
+        background-size: 5vw 5vw;
+    }
+
+    header button{
+        width: 20vw;
+        height: 10vw;
+    }
+
+    header
+
     .kaart.kaartGedraaid{
         /* animation: verplaatsEnDraai 1s forwards; */
         transform: rotateY(0.5turn);
